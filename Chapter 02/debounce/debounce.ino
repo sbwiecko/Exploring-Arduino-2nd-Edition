@@ -29,7 +29,7 @@ boolean debounce(boolean last)
   boolean current = digitalRead(BUTTON);       // Read the button state
   if (last != current)                         // If it's different…
   {
-    delay(5);                                  // Wait 5ms
+    delay(5);                                  // Wait 5ms until complete debouncing
     current = digitalRead(BUTTON);             // Read it again
   }
   return current;                              // Return the current value

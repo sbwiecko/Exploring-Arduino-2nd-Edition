@@ -15,11 +15,9 @@ void setup()
 
 void loop()
 {
-  for (int i=100; i<=1000; i=i+100)
-  {
-    digitalWrite(LED, HIGH);
-    delay(i);
-    digitalWrite(LED, LOW);
-    delay(i);
-  }
+  int i = 50000;
+  digitalWrite(LED, HIGH);
+  delay(i);
+  digitalWrite(LED, LOW);
+  delay(i);
 }

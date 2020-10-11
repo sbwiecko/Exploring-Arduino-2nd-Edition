@@ -13,17 +13,31 @@ const int BUTTON=2;      // The Button is connected to pin 2
 void setup()
 {
   pinMode (LED, OUTPUT);     // Set the LED pin as an output
-  pinMode (BUTTON, INPUT);   // Set button as input (not required)
+  pinMode (BUTTON, INPUT);   // Set button as input (not required because default)
 }
 
 void loop()
 {
-  if (digitalRead(BUTTON) == LOW)
+  if (digitalRead(BUTTON) == LOW)  // LOW or 0
   {
     digitalWrite(LED, LOW);
   }
   else
   {
-    digitalWrite(LED, HIGH);
+    digitalWrite(LED, HIGH);   // HIGH or 1
   }
 }
+
+
+/*
+         v when switch open connector is floating receiving electronic noise for surrounding ca. 60 Hz
++5V----o o----.<10k>----GND
+              |
+              |
+             [2]
+
+
+[9~]---<220>----|>!----GND
+        R1      LED1
+
+*/

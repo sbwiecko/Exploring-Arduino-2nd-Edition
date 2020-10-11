@@ -15,14 +15,14 @@ void setup()
 
 void loop()
 {
-  for (int i=0; i<256; i++)
+  for (int i=0; i<256; i++) // 8 bits value from 2^0 (0) to 2^8-1 (255)
   {
-    analogWrite(LED, i);
+    analogWrite(LED, i);    // PWM (pulse-width modulation)
     delay(10);
   }
   for (int i=255; i>=0; i--)
   {
     analogWrite(LED, i);
-    delay(10);
+    delay(25);
   }
 }

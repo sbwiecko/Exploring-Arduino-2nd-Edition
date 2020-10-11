@@ -18,3 +18,13 @@ void loop()
 {
   // We are not doing anything in the loop!
 }
+
+/*
+
+[9~]---/\/\/\/----|>!----GND
+          R1      LED1
+
+R=V/I where V=3V and I=20mA, R=150Ω < 220Ω
+P=IV --> P=60mW < resistor's rating of 1/8W
+ 
+ */
